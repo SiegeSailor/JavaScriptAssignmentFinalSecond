@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Necessary -->
+    <meta charset="UTF-8">
+    <!-- View Resolution -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Content -->
+    <title>BMI CALCULATOR</title>
+    <meta name="description" content="Calculate your weight in BMI.">
+    <meta name="keywords" content="bmi, weight">
+    <link rel="shortcut icon"
+        href="https://lh3.googleusercontent.com/u3Ro6BRBWSEVCZq-cZbEzYBWfpxItelz-xe_1DMj4cdn-NaUSIjcnJv1DZ_yoDBS81c">
+    <!-- Browser Condition -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Outsource CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="layout-banner container">
+        <div class="item">
+            <div class="container">
+                <img src="img/BMICLogo.png" alt="BMI">
+            </div>
+        </div>
+        <div class="item">
+            <ul>
+                <li>
+                    <p class="input-caption">身高 cm</p>
+                    <input type="number" id="height-input" class="input-accent" placeholder="請輸入身高">
+                </li>
+                <li>
+                    <p class="input-caption">體重 kg</p>
+                    <input type="number" id="weight-input" class="input-accent" placeholder="請輸入體重">
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="container">
+                <!-- <input type="button" value="看結果" id="result-btn" class="btn-accent"> -->
+                <div class="display display-normal">
+                    <input type="button" class="btn-normal">
+                    <p>理想</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layout-content normal">
+        <h2>BMI 紀錄</h2>
+        <ul>
+            <li>
+                <ul>
+                    <li><span class="text-content">理想</span></li>
+                    <li>BMI<span class="bmi text-content">20.90</span></li>
+                    <li>Weight<span class="weight text-content">70kg</span></li>
+                    <li>Height<span class="height text-content">180cm</span></li>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+            <div class="icon"></div>
+    </div>
+    <!-- Own JS -->
+    <script src="js/all.js"></script>
+</body>
+
+</html>
