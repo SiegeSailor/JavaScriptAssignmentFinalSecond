@@ -14,6 +14,8 @@
         href="https://lh3.googleusercontent.com/u3Ro6BRBWSEVCZq-cZbEzYBWfpxItelz-xe_1DMj4cdn-NaUSIjcnJv1DZ_yoDBS81c">
     <!-- Browser Condition -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
     <!-- Outsource CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Own CSS -->
@@ -30,7 +32,7 @@
         <div class="item">
             <ul>
                 <li>
-                    <p class="input-caption">身高 cm</p>
+                    <p class="input-caption">身高 m</p>
                     <input type="number" id="height-input" class="input-accent" placeholder="請輸入身高">
                 </li>
                 <li>
@@ -39,32 +41,38 @@
                 </li>
             </ul>
         </div>
-        <div class="item">
+        <div class="item trigger">
             <div class="container">
-                <!-- <input type="button" value="看結果" id="result-btn" class="btn-accent"> -->
-                <div class="display display-normal">
-                    <input type="button" class="btn-normal">
-                    <p>理想</p>
+                <input type="button" value="看結果" id="result-btn" class="btn-accent">
+                <div id="result-display" class="display display-normal">
+                    <input type="button" value="result">
+                    <div class="description">
+                        <p>status</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="loop"><img src="img/icons_loop.png" alt="See Result"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="layout-content normal">
+    </div>
+    <div class="layout-content">
         <h2>BMI 紀錄</h2>
         <ul>
-            <li>
+            <li class="normal">
                 <ul>
                     <li><span class="text-content">理想</span></li>
                     <li>BMI<span class="bmi text-content">20.90</span></li>
                     <li>Weight<span class="weight text-content">70kg</span></li>
-                    <li>Height<span class="height text-content">180cm</span></li>
-                    <li></li>
+                    <li>Height<span class="height text-content">1.8m</span></li>
+                    <li class="date">06-19-2017</li>
                 </ul>
+
             </li>
         </ul>
     </div>
     <div class="footer">
-            <div class="icon"></div>
+        <div class="icon"></div>
     </div>
     <!-- Own JS -->
     <script src="js/all.js"></script>
